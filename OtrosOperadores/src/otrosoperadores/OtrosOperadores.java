@@ -13,10 +13,16 @@ public class OtrosOperadores {
         }*/
  /*2)Realizar un programa que dado por teclado un límite numérico (por ejemplo 100)
         muestre en pantalla todos los números hasta ese límite (empezando por 1)*/
- /*int contador = 0, numeroClave = 100, respuesta;
+        /*int contador = 0, numeroClave = 100, respuesta;
         Scanner teclado = new Scanner(System.in);
 
-        do {
+        System.out.println("Ingrese un límite numérico:");
+        respuesta = teclado.nextInt();
+        for (int num = 0; num < respuesta; num++) {
+            System.out.println(num+1);
+        }*/
+        
+        /*do {
             System.out.println("Ingrese el número clave para finalizar: ");
             respuesta = teclado.nextInt();
 
@@ -42,12 +48,12 @@ public class OtrosOperadores {
         }*/
  /*5) Realizar un programa que muestre en pantalla palabras que sean ingresadas por
  teclado hasta que se ingrese la palabra "salir"*/
-        String palabra;
+ String palabra;
         Scanner teclado = new Scanner(System.in);
 
         do {
             System.out.println("\nIngrese una palabra para mostrar en pantalla\nRecuerde que puede ingresar la palabra 'salir' para terminar el programa");
-            palabra = teclado.next();
+            palabra = teclado.next(); //Aunque podríamos usar también nextLine() para tomar una cadena de varias palabras;
             System.out.println("\n" + palabra);
         } while (!(palabra.trim().equalsIgnoreCase("salir")));
     }
