@@ -24,6 +24,13 @@ public class ArreglosArrays_Bidimensionales_Matrices {
                 System.out.println("Fila: " + f + " Columna" + c + " - Valor: " + matriz[f][c]);
             }
         }
+        
+        //Otra forma de recorrer la matriz si no sabemos su longitud sería:
+        for (int f=0; f<matriz.length ; f++){
+            for (int c=0; c<matriz[0].length; c++){
+                System.out.println("Fila: " + f + " Columna" + c + " - Valor: " + matriz[f][c]);
+            }
+        }
     }
     
 }
