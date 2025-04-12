@@ -9,6 +9,8 @@ public class ArreglosArrays_Bidimensionales_Matrices {
         int matriz[][] = new int [3][3];
         Scanner teclado = new Scanner (System.in);
         
+        //Cuando una matríz tiene la misma cantidad de filas que de columnas = matríz cuadrada
+        
         //Recorrido de la matriz cuadrada y carga de valores en la misma
         for (int f=0; f<3 ; f++){
             for (int c=0; c<3; c++){
