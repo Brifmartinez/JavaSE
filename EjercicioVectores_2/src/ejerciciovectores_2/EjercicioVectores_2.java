@@ -5,6 +5,12 @@ import java.util.Scanner;
 public class EjercicioVectores_2 {
 
     public static void main(String[] args) {
+        
+        /*
+        Realizar un programa que permita la carga de 10 números en un vector.
+        Una vez cargados, se necesita que el programa determine cual es el mayor
+        y cual es el menor de ellos
+        */
 
         Scanner teclado = new Scanner(System.in);
         int numeros[] = new int[10];
