@@ -11,7 +11,8 @@ public class EjercicioVectores_4 {
         Cada fila corresponde a las notas de cada alumno
          */
         double notas[][] = new double[4][3];
-        double promedio = 0;
+        double promedios[] = new double[4];
+        double promedio;
         Scanner teclado = new Scanner(System.in);
 
         //Recorrido y carga de las notas a la matriz
@@ -25,12 +26,17 @@ public class EjercicioVectores_4 {
 
         //Recorrido y muestra de las notas a la matriz
         for (int f = 0; f < notas.length; f++) {
+            promedio = 0;
             for (int c = 0; c < notas[0].length; c++) {
                 promedio += notas[f][c];
-                System.out.println("Alumno: " + (f + 1) + " - Nota Nº: " + (c+1) + " " + notas[f][c]);
+                System.out.println("Alumno: " + (f + 1) + " - Nota Nº: " + (c + 1) + " " + notas[f][c]);
             }
+            promedios[f] = (promedio / notas[0].length);
+            System.out.println("El promedio del almuno nro: " + (f + 1) + " es: " + promedios[f]);
+
+            /*
             System.out.println("El promedio del almuno nro: " + (f + 1) + " es: " + (promedio/notas[0].length));
-            promedio = 0;
+             */
         }
     }
 
